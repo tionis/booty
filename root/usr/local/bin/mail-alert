@@ -1,0 +1,9 @@
+#!/bin/sh
+
+(
+  echo "\
+Subject: $*
+To: booty@tionis.dev
+"
+  cat
+) | /usr/sbin/sendmail booty@tionis.dev
